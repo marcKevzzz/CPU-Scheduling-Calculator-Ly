@@ -424,12 +424,10 @@ export function renderCPUUtilization(totalIdle, result, ganttChart) {
 }
 
 export function resetUI(algorithm) {
-  ["head", "tail", "queue", "process", "completion"].forEach(
-    (id) => {
-      const el = document.getElementById(id);
-      if (el) el.innerHTML = "";
-    }
-  );
+  ["head", "tail", "queue", "process", "completion"].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = "";
+  });
 
   document.getElementById("formula").classList.remove("hiden");
   document.getElementById("cpuResult").classList.add("hide");
@@ -479,8 +477,8 @@ export function resetUI(algorithm) {
                   ></div>`;
 
   document.getElementById(
-    "resultTable"
-  ).innerHTML = `<div class="text-[12px] font-semibold flex flex-col gap-2 w-[fit-content]">
+    "resultTableCol"
+  ).innerHTML = `<div class="text-[14px] font-semibold flex flex-col gap-2 w-[fit-content]">
                 <div>TT1 -</div>
                 <div>TT2 -</div>
                 <div>TT3 -</div>
@@ -490,8 +488,8 @@ export function resetUI(algorithm) {
               </div>`;
 
   document.getElementById(
-    "resultTableWaitingTime"
-  ).innerHTML = `<div class="text-[12px] font-semibold w-[fit-content] flex flex-col gap-2">
+    "resultTableWaitingTimeCol"
+  ).innerHTML = `<div class="text-[14px] font-semibold w-[fit-content] flex flex-col gap-2">
                 <div>WT1 -</div>
                 <div>WT2 -</div>
                 <div>WT3 -</div>
