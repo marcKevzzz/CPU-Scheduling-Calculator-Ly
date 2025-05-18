@@ -1,0 +1,124 @@
+.timeline-block {
+  border-radius: 4px;
+  border: none;
+  position: relative;
+}
+
+#timeline {
+  white-space: nowrap;
+  align-items: flex-end;
+  position: relative;
+}
+
+.timeline-vrline {
+  width: calc(100% - 70px);
+  border-top: 2px solid #2e2e8c;
+  position: absolute;
+  top: 48%;
+  left: 35px;
+}
+.timeline-vrlines {
+  width: calc(100%);
+  border-top: 1px solid #2e2e8c;
+  position: absolute;
+  top: 48%;
+}
+
+.dropdown-arrows {
+  border-right: 1px solid #2e2e8c;
+}
+
+.dropdown-arrow {
+  width: 2px;
+  height: 20px;
+  background-color: #2e2e8c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+section #timelineBar,
+section #ganttchart,
+#cpuResult {
+  overflow-x: auto;
+  max-width: calc(100%);
+}
+
+.timeQuantum,
+.prioritys {
+  display: none;
+}
+
+#completion,
+#cpuResult span,
+#formula span {
+  text-wrap-mode: nowrap;
+}
+
+.hiden {
+  display: none !important;
+}
+.hide {
+  display: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.slashed {
+  position: relative;
+  display: inline-block;
+}
+.slashed::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  height: 2px;
+  width: 30%;
+  background: rgba(0, 0, 0, 0.753);
+  transform: rotate(25deg);
+}
+
+@media screen and (width < 30rem) {
+  .hides {
+    display: none;
+  }
+
+  .oos {
+    width: fit-content;
+    padding: 0.5rem;
+  }
+
+  .oos div {
+    width: fit-content;
+    margin: 0;
+  }
+
+  header {
+    padding-inline: 0.8em !important;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.25em;
+  background-color: white;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 20px;
+}
