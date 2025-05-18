@@ -424,7 +424,7 @@ export function renderCPUUtilization(totalIdle, result, ganttChart) {
 }
 
 export function resetUI(algorithm) {
-  ["head", "tail", "queue", "process", "completion", "cpuResult"].forEach(
+  ["head", "tail", "queue", "process", "completion"].forEach(
     (id) => {
       const el = document.getElementById(id);
       if (el) el.innerHTML = "";
